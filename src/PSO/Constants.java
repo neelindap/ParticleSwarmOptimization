@@ -12,8 +12,8 @@ package PSO;
 public class Constants {
     public static double MAX_TEMP = 800d;
     public static double TEMP_DIFF = 50d;
-    public static int SWARM_SIZE = 50;
-    public static int MAX_ITERATION = 10000;
+    public static int SWARM_SIZE = 30;
+    public static int MAX_ITERATION = 5000;
     public static int AREA_SIZE = 50;
     public static double C1 = 2.0;
     public static double C2 = 2.0;
