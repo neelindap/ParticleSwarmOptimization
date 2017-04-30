@@ -1,4 +1,4 @@
-package PSO;
+package business;
 
 import java.util.ArrayList;
 
@@ -15,10 +15,10 @@ import java.util.ArrayList;
 public class Swarm{
     
     private ArrayList<Particle> particles;
-    private Particle gBest;
+    private Particle globalBest;
 
     public Swarm() {
-        particles = new ArrayList<Particle>();
+        particles = new ArrayList<>();
     }
     
     public void addParticle(Particle particle){
@@ -29,12 +29,12 @@ public class Swarm{
         return particles;
     }
 
-    public Particle getgBest() {
-        return gBest;
+    public Particle getGlobalBest() {
+        return globalBest;
     }
 
-    public void setgBest(Particle gBest) {
-        this.gBest = gBest;
+    public void setGlobalBest(Particle globalBest) {
+        this.globalBest = globalBest;
     }
     
 }

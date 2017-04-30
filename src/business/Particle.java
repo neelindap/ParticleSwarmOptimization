@@ -1,4 +1,4 @@
-package PSO;
+package business;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,8 +19,8 @@ public class Particle {
     private int yPos;
     private double xVel;
     private double yVel;
-    private Double temp;
-    private Particle lBest;
+    private Double temparture;
+    private Particle localBest;
 
     public int getxPos() {
         return xPos;
@@ -54,24 +54,24 @@ public class Particle {
         this.yVel = yVel;
     }
 
-    public Double getTemp() {
-        return temp;
+    public Double getTemparture() {
+        return temparture;
     }
 
-    public void setTemp(Double temp) {
-        this.temp = temp;
+    public void setTemparture(Double temparture) {
+        this.temparture = temparture;
     }
 
-    public Particle getlBest() {
-        return lBest;
+    public Particle getLocalBest() {
+        return localBest;
     }
 
-    public void setlBest(Particle lBest) {
-        this.lBest = lBest;
+    public void setLocalBest(Particle localBest) {
+        this.localBest = localBest;
     }
     
     public double getFitness(){
-        return (temp/Constants.MAX_TEMP)*100.0/100.0;
+        return (temparture/Constants.MAX_TEMP)*100.0/100.0;
     }
     
 }
